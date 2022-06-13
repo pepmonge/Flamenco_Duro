@@ -1,0 +1,61 @@
+.botonera{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.boton{
+    width: 120px;
+}
+
+.paginacion{
+    height: 100px;
+    background-color: aquamarine;
+}
+
+.imgUsuario{
+    width: 500px;
+}
+
+.crear{
+    height: 90vh;
+}
+
+.usuario{
+    height: 60vh;
+}
+
+/* Pantalla a parir de 1200px (De abajo hacia arriba) */
+@media screen and (min-width: 1200px) {
+    .crear{
+        height: 60vh;
+    }      
+}
+
+ /* Pantalla a parir de 768px (De arriba hacia abajo)*/
+@media screen and (max-width: 768px) {
+    .boton {
+       width:100%;
+       margin-bottom: 5px;
+    }
+
+    .botonera{
+        padding-bottom: 2%;
+    }   
+}
+ 
+/* Pantalla a parir de 1200px (De arriba hacia abajo)*/
+@media screen and (max-width: 1200px) {
+    .imgUsuario{
+        width: 100%;
+    }
+
+}
+
+/* Pantalla a parir de 5760px (De arriba hacia abajo)*/
+@media screen and (max-width: 576px) {
+    .usuario{
+        height: 100%;
+    }
+}
+
