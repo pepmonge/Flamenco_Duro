@@ -25,6 +25,10 @@
     height: 60vh;
 }
 
+.busquedaUno{
+    height: 65vh;
+}
+
 /* Pantalla a parir de 1200px (De abajo hacia arriba) */
 @media screen and (min-width: 1200px) {
     .crear{
@@ -42,6 +46,10 @@
     .botonera{
         padding-bottom: 2%;
     }   
+
+    .busquedaUno{
+        height: auto;
+    }
 }
  
 /* Pantalla a parir de 1200px (De arriba hacia abajo)*/
@@ -57,5 +65,7 @@
     .usuario{
         height: 100%;
     }
+    
 }
+
 

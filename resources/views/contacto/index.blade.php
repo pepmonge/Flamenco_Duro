@@ -32,7 +32,7 @@
         @endif
    </div>
 
-   <div class="col-sm-12 col-xl-6">
+   <div class="col-sm-12 col-xl-6 mt-sm-5 mt-xl-0">
     <h1>Localización</h1>
     <div id="map-container-google-3" class="z-depth-1-half map-container-3 map-responsive">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25428.37580254373!2d-5.797342907613052!3d37.18723575112673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd127f0ec1c94487%3A0x6a1c6276d4cb02c0!2s41710%20Utrera%2C%20Sevilla!5e0!3m2!1ses!2ses!4v1652017474087!5m2!1ses!2ses" frameborder="0"

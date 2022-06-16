@@ -25,7 +25,7 @@
 @endif
 
   @if (count($articulo) == 1)
-   <div class="container" style="height: 65vh;">
+   <div class="container busquedaUno">
   @endif
   
   @if (count($articulo) > 1)
