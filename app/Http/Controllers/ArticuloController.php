@@ -142,7 +142,7 @@ class ArticuloController extends Controller {
     }
     
     //Funcion api que selecciona un articulo por id de articulo
-    public function apiComentarioArticulo($id){
+    public function apiContenidoArticulo($id){
         $articulo = Article::select('articles.titulo', 'articles.contenido')->where('articles.id', $id)->get();
         return $articulo;
     }

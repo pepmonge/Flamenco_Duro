@@ -22,7 +22,7 @@ function cargador() {
     }
   }
 
-  xhr.open('GET', `http://localhost/Ejercicio%20PHP/Laravel/Flamenco_Duro_3/public/api/articulos/${userId}`); //Asi paso el value del option, input y eso a una variable 
+  xhr.open('GET', `http://localhost/Ejercicio%20PHP/Laravel/Flamenco%20Duro%20Amove/Flamenco_Duro/public/api/articulos/${userId}`); //Asi paso el value del option, input y eso a una variable 
   xhr.send();
 
 }
@@ -50,7 +50,7 @@ console.log(array)
     }
   }
 
-  xhr.open('GET', `http://localhost/Ejercicio%20PHP/Laravel/Flamenco_Duro_3/public/api/articulos/${id}`); //Asi paso el value del option, input y eso a una variable 
+  xhr.open('GET', `http://localhost/Ejercicio%20PHP/Laravel/Flamenco%20Duro%20Amove/Flamenco_Duro/public/api/articulos/${id}`); //Asi paso el value del option, input y eso a una variable 
   xhr.send();
 
 }
@@ -83,7 +83,7 @@ function cargaComentarios() {
     }
   }
 
-  xhr.open('GET', `http://localhost/Ejercicio%20PHP/Laravel/Flamenco_Duro_3/public/api/comentarios/${ide}`); //Asi paso el value del option, input y eso a una variable 
+  xhr.open('GET', `http://localhost/Ejercicio%20PHP/Laravel/Flamenco%20Duro%20Amove/Flamenco_Duro/public/api/comentarios/${ide}`); //Asi paso el value del option, input y eso a una variable 
   xhr.send();
 
 }
@@ -116,7 +116,7 @@ function cargarTodos() {
     }
   }
 
-  xhr.open('GET', 'http://localhost/Ejercicio%20PHP/Laravel/Flamenco_Duro_3/public/api/usuarios'); //Asi paso el value del option, input y eso a una variable 
+  xhr.open('GET', 'http://localhost/Ejercicio%20PHP/Laravel/Flamenco%20Duro%20Amove/Flamenco_Duro/public/api/usuarios'); //Asi paso el value del option, input y eso a una variable 
   xhr.send();
 
 }
@@ -144,7 +144,7 @@ function cargaArticulosUsuario(ev) {
     }
   }
 
-  xhr.open('GET', `http://localhost/Ejercicio%20PHP/Laravel/Flamenco_Duro_3/public/api/articulos/${id}`); //Asi paso el value del option, input y eso a una variable 
+  xhr.open('GET', `http://localhost/Ejercicio%20PHP/Laravel/Flamenco%20Duro%20Amove/Flamenco_Duro/public/api/articulos/${id}`); //Asi paso el value del option, input y eso a una variable 
   xhr.send();
 
 }
@@ -169,7 +169,7 @@ function cargaContenido() {
     }
   }
 
-  xhr.open('GET', `http://localhost/Ejercicio%20PHP/Laravel/Flamenco_Duro_3/public/api/articulo/comentario/${idCont}`); //Asi paso el value del option, input y eso a una variable 
+  xhr.open('GET', `http://localhost/Ejercicio%20PHP/Laravel/Flamenco%20Duro%20Amove/Flamenco_Duro/public/api/articulo/contenido/${idCont}`); //Asi paso el value del option, input y eso a una variable 
   xhr.send();
 
 }

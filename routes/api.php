@@ -31,6 +31,6 @@ Route::get('usuarios', [AuthenticatedSessionController::class, 'apiUsers'])->nam
 
 Route::get('articulos/{id}', [ArticuloController::class, 'apiArticulos'])->name('apiArticulos');
 
-Route::get('articulo/comentario/{id}', [ArticuloController::class, 'apiComentarioArticulo'])->name('apiComentarioArticulo');
+Route::get('articulo/contenido/{id}', [ArticuloController::class, 'apiContenidoArticulo'])->name('apiContenidoArticulo');
 
 Route::get('comentarios/{id}', [ComentarioController::class, 'apiComentarios'])->name('apiComentarios');
