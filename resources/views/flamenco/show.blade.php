@@ -14,7 +14,7 @@
           <iframe class="embed-responsive-item p-1" width="100%" height="400px" src="https://www.youtube.com/embed/{{$articulo->url}}" allowfullscreen></iframe>
         </div>
         <div class="col-12 col-md-4 d-none d-md-block" style="background-image: url({{ asset('img/cabpas.png') }}); background-repeat: no-repeat; background-position: center;">
-          <h4>Videos subidos por usarios</h4>
+          <h4>Artículos creados por usarios</h4>
           <select class="form-select bg-primary bg-opacity-10" multiple aria-label="multiple select example" id="ajax"></select>
           <div class="bg-success bg-opacity-10 mt-2 border border-1 rounded pb-5" id="ajaxDos"></div>         
 
