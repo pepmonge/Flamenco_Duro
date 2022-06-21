@@ -1,0 +1,63 @@
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+@-webkit-keyframes fadeIn {
+0% {opacity: 0;}
+100% {opacity: 1;}
+}
+@keyframes fadeIn {
+0% {opacity: 0;}
+100% {opacity: 1;}
+}  
+
+@-webkit-keyframes fadeIn {
+    0% {
+        -webkit-filter: blur(12px);
+                filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+                filter: blur(0px);
+        opacity: 1;
+    }
+    }
+    @keyframes fadeIn {
+    0% {
+        -webkit-filter: blur(12px);
+                filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+                filter: blur(0px);
+        opacity: 1;
+    }
+}
+      
+
+
+  
+
+.centradouno{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centrado{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
