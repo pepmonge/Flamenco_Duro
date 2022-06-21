@@ -10,12 +10,12 @@ class ComentarioController extends Controller {
     
     // Función para crear comentarios 
     public function store(Request $request){
-        $comentario = new Comment();
-        $comentario->article_id = $request->id;
-        $comentario->user_id = Auth::user()->id;
-        $comentario->comentario = $request->comentario; 
-        $comentario->save();
-        return redirect()->route('flamenco.show', $comentario->article_id );
+            $comentario = new Comment();
+            $comentario->article_id = $request->id;
+            $comentario->user_id = Auth::user()->id;
+            $comentario->comentario = $request->comentario; 
+            $comentario->save();
+            return redirect()->route('flamenco.show', $comentario->article_id );
     }
 
     // Función API para mostrar los comentarios en la parte inferior de los artículos

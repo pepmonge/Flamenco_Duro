@@ -1,7 +1,7 @@
 <x-guest-layout>
     <x-auth-card>
         <x-slot name="logo">
-            <a href="/">
+            <a href="{{route('flamenco.index')}}">
                 <img src="{{ asset('img/cab-450.png') }}" class="fill-current text-gray-500"/>
             </a>
         </x-slot>

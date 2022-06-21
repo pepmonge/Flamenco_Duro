@@ -29,19 +29,19 @@ require __DIR__.'/auth.php';
 
 Route::get('flamenco', [ArticuloController::class, 'index'])->name('flamenco.index');
 
-Route::get('flamenco/create', [ArticuloController::class, 'create'])->middleware(['auth'])->name('flamenco.create');
+Route::get('flamenco/create', [ArticuloController::class, 'create'])->middleware(['auth', 'verified'])->name('flamenco.create');
 
 Route::get('flamenco/{articulo}', [ArticuloController::class, 'show'])->name('flamenco.show');
 
 Route::post('flamenco', [ArticuloController::class, 'store'])->middleware(['auth'])->name('flamenco.store');
 
-Route::get('flamenco/{articulo}/edit', [ArticuloController::class, 'edit'])->middleware(['auth'])->name('flamenco.edit');
+Route::get('flamenco/{articulo}/edit', [ArticuloController::class, 'edit'])->middleware(['auth', 'verified'])->name('flamenco.edit');
 
 Route::put('flamenco/{articulo}', [ArticuloController::class, 'update'])->middleware(['auth'])->name('flamenco.update');
 
-Route::delete('flamenco/{articulo}', [ArticuloController::class, 'destroy'])->middleware(['auth'])->name('flamenco.destroy');
+Route::delete('flamenco/{articulo}', [ArticuloController::class, 'destroy'])->middleware(['auth', 'verified'])->name('flamenco.destroy');
 
-Route::post('comentarios', [ComentarioController::class, 'store'])->middleware(['auth'])->name('comentarios.store');
+Route::post('comentarios', [ComentarioController::class, 'store'])->middleware(['auth', 'verified'])->name('comentarios.store');
 
 Route::get('contacto', [ContactoController::class, 'index'])->name('contacto.index');
 

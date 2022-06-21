@@ -16,7 +16,7 @@ class ContactoController extends Controller
     // Función que crea un correo y lo envia al correo del super-administrador
     public function store(Request $request){
         $correo = new ContactoMailable($request->all());
-        Mail::to('felipondio1974@gmail.com')->send($correo);
+        Mail::to('info@flamencoduro.es')->send($correo);
         return redirect()->back()->with('mensaje', 'Mensaje enviado con exito');
     }
 }

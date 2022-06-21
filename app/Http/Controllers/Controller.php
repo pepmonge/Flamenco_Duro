@@ -28,6 +28,6 @@ function separaIdVideo($enlace){
 }
 
 function unSoloSalto($amove){
-   $amove = str_replace("<br />", "<p>", $amove);
+   $amove = str_replace("<br /><br />", "<br />", $amove);
    return $amove;
 }

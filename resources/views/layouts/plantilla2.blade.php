@@ -31,7 +31,7 @@
             <ul class="navbar-nav mb-2 mb-lg-0">
 
               @if (Auth::check())
-              @if (auth()->user()->name == 'Pepe')
+              @if (auth()->user()->name == 'Pepe' && auth()->user()->id == 4)
               <li class="nav-item">
                 <a class="nav-link text-warning active" aria-current="page" href="{{route('usuarios.index')}}">Usuarios</a>
               </li>

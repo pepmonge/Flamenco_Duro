@@ -12,7 +12,7 @@ class UsuariosController extends Controller {
     // Función para listar todoslos usuarios en caso de que el super-administrador haya iniciado sesión
     public function index(){
         $usuarios = User::all();
-        if(Auth::user()->name == 'Pepe'){
+        if(Auth::user()->name == 'Pepe' && Auth::user()->id == 4){
             return view('usuarios.index', compact('usuarios'));
         }else{
             return redirect()->back()->with('mensaje', 'No tiene permisos para esa operación');
@@ -39,7 +39,7 @@ class UsuariosController extends Controller {
 
     //Funcion para que el superadministrador elimine cualquier cuenta
     public function destroy(User $usuario){
-        if(Auth::user()->name == 'Pepe'){
+        if(Auth::user()->name == 'Pepe' && Auth::user()->id == 4){
             $usuario->delete();
             return redirect()->route('usuarios.index')->with('mensaje-exito', 'Usuario eliminado con exito');
         }

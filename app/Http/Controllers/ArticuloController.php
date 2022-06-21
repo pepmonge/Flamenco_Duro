@@ -38,7 +38,11 @@ class ArticuloController extends Controller {
     // Función que conduce al formulario de creacion de nuevo articulo
     public function create(){
         if (Auth::user()->tipo == 'Administrador'){
-            return view('flamenco.create');
+            if (Auth::user()->email_verified_at != null){
+                return view('flamenco.create');
+            }else {
+                return redirect()->route('flamenco.index')->with('mensaje', 'No puede crear hasta que no verifique su email');
+            }
         }else {
             return redirect()->route('flamenco.index')->with('mensaje', 'Solo los administradores pueden crear artículos');
         }
