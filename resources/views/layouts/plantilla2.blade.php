@@ -15,10 +15,10 @@
 <body style="background-color: #e5e5e5">
   
 {{-- cabecera --}}
- <div class="cabecera container p-4 bg-success rounded">
+ <div class="cabecera container p-4 rounded">
      <div class="row">
       <div class="col-sm-12 col-md-3 d-flex justify-content-center justify-content-md-start">
-        <h1 class="text-light"><img src="{{ asset('/img/cab-250.png') }}" alt="" class="img-fluid"></h1>
+        <h1 class="text-light"><img src="{{ asset('/img/cab-250-resp.png') }}" alt="" class="img-fluid"></h1>
      </div>
      <div class="col-sm-12 col-md-9 d-flex justify-content-center justify-content-md-end">
       <nav class="navbar navbar-expand-lg  navbar-light">
@@ -102,13 +102,13 @@
       @if (Auth::check())  
 
           {{-- Botón desplegable --}}
-          <a class="nav-link d-inline dropdown-toggle dropdown" id="desplegable" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="bajocabecera nav-link d-inline dropdown-toggle dropdown" id="desplegable" data-bs-toggle="dropdown" aria-expanded="false">
             {{ auth()->user()->name }} 
           </a>
           <div class="dropdown-menu p-2" aria-labelledby="desplegable">
-            <a class="nav-link d-inline" href="{{ route('usuarios.edit', auth()->user()->id) }}">Configurar</a>
+            <a class="bajocabecera nav-link d-inline" href="{{ route('usuarios.edit', auth()->user()->id) }}">Configurar</a>
             <hr class="dropdown-divider">
-            <a class="nav-link d-inline" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Salir</a>
+            <a class="bajocabecera nav-link d-inline" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Salir</a>
             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
               @csrf
             </form>   
@@ -117,8 +117,8 @@
                    
             <!--Si el usuario no esta logeado se quita su nombre y aparece un botos de login y otro para registrarse-->      
       @else    
-          <a class="nav-link d-inline" href="{{ route('login') }}">Login</a>
-          <a class="nav-link d-inline" href="{{ route('register') }}">Registrate</a>        
+          <a class="bajocabecera nav-link d-inline" href="{{ route('login') }}">Login</a>
+          <a class="bajocabecera nav-link d-inline" href="{{ route('register') }}">Registrate</a>        
      @endif
      </div>
   </div>

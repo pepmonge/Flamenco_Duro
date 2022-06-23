@@ -52,5 +52,6 @@
                 </x-button>
             </div>
         </form>
+        <div style="text-align: end; margin-top: 10px;"><a class="mr-4" href="{{ route('flamenco.index') }}"><small>Volver atrás</small></a></div>
     </x-auth-card>
 </x-guest-layout>

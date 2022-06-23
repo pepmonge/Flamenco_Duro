@@ -1,3 +1,7 @@
+.cabecera{
+    background: linear-gradient(0deg, rgba(21,34,8,1) 0%, rgba(25,135,84,1) 100%);
+}
+
 .botonera{
     display: flex;
     flex-direction: column;
@@ -27,6 +31,18 @@
 
 .busquedaUno{
     height: 65vh;
+}
+
+.nav-link:hover{
+    color: rgb(131, 226, 131) !important;
+}
+
+.bajocabecera{
+    color: #198754;
+}
+
+.bajocabecera:hover{
+    color: #1e3f30 !important;
 }
 
 /* Pantalla a parir de 1200px (De abajo hacia arriba) */
