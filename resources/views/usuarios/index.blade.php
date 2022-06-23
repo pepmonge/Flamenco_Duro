@@ -6,7 +6,12 @@
 @section('contenedor-central')
 
 {{-- Tabla de usuaros de escritorio --}}
-<div class="col-12 d-none d-xl-block usuario">
+
+@if(count($usuarios) < 9)
+<div class="col-12 d-none d-xl-block usuario">    
+@else
+<div class="col-12 d-none d-xl-block"> 
+@endif
     <table class="table table-striped">
         <thead class="table-success">
             <tr>
